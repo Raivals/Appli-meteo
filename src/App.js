@@ -71,7 +71,7 @@ function App() {
   // Si chargement
   if (isLoading) {
     return (
-      <div className="min-h-screen h-max bg-cyan-600 flex justify-center items-start p-8 md:px-20">
+      <div className="min-h-screen h-max bg-gray-700 flex justify-center items-start p-8 md:px-20">
         <p className="text-center">Chargement...</p>
       </div>
     )
@@ -79,7 +79,7 @@ function App() {
   // Si Erreur
   if (error) {
     return (
-      <div className="min-h-screen h-max bg-cyan-600 flex justify-center items-start p-8 md:px-20">
+      <div className="min-h-screen h-max bg-gray-700 flex justify-center items-start p-8 md:px-20">
         <p className="text-center text-red-500">
           Une erreur est survenue lors de la récupération des prévisions météo
           ...
@@ -88,8 +88,8 @@ function App() {
     )
   }
   return (
-    <div className="min-h-screen h-max bg-cyan-600 flex justify-center items-start p-8 md:px-20">
-      <div className="w-full max-w-7xl bg-gradient-to-r from-cyan-500 to-blue-500 rounded-lg shadow-lg p-4 md:px-12 md:py-8 xl:py-12 xl:px-28">
+    <div className="min-h-screen h-max bg-gradient-to-r from-gray-500 to-gray-800 flex justify-center items-start p-8 md:px-20">
+      <div className="w-full max-w-7xl bg-gradient-to-r from-green-400 to-green-800 rounded-lg shadow-lg p-4 md:px-12 md:py-8 xl:py-12 xl:px-28">
         <Today data={weatherData[0]} weatherUnits={weatherUnits} />
         <div className="grid grid-cols-1 gap-6 md:grid-cols-3 xl:grid-cols-6">
           {weatherData &&

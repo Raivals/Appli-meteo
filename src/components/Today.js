@@ -42,7 +42,7 @@ const Today = ({ data, weatherUnits }) => {
             Aujourd'hui, {data.day}
           </div>
         </div>
-        <div className="text-xl ml-12 xl:pl-4 xl:border-l-2 xl:border-l-indigo-500">
+        <div className="text-xl ml-12 text-white xl:pl-4 xl:border-l-2 xl:border-l-orange-800">
           <p>
             {emojis.calendar} Jour : {data.day}
           </p>
